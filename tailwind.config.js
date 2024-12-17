@@ -4,7 +4,13 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'custom-bg': "url('/Back.png')", // Custom class
+      },
+    },
   },
-  plugins: [],
+plugins: [
+  require('tailwind-scrollbar-hide'),
+],
 }
